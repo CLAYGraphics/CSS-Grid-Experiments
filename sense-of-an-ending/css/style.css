@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css?family=Jaldi:700');
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display:400,400i');
+
+body {
+    font-size: 16px;
+    margin: 0;
+    text-rendering: optimizeLegibility;
+    -webkit-font-kerning: normal;
+            font-kerning: normal;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+h1 {
+    font-family: 'Jaldi', sans-serif;
+    color: #ffffff;
+    font-size: 9em;
+    margin:0;
+    letter-spacing: -0.3rem;
+    line-height: 10rem;
+    text-align: right;
+    padding: 0;
+}
+
+p {
+    font-family: 'Playfair Display', serif;
+    font-size: 0.8em;
+    margin: 0;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(400px, 1fr));
+    grid-template-rows: 30px 1fr auto;
+    height: 100vh;
+}
+
+.left {
+    grid-column: 1;
+    grid-row: 1 / -1;
+    background-color:#df3b44;
+}
+
+.right {
+    grid-column: 2;
+    grid-row: 1 / -1;
+    background-color: #848E97;
+    background-image: url('/sense-of-an-ending/img/rapha-pic.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.page-details {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 30px;
+    grid-column: 2;
+}
+
+.page-details p {
+    font-size: 0.6rem;
+    letter-spacing: 0.15rem;
+    font-weight: bold;
+}
+
+.page-number {
+    grid-column: 1;
+    padding: 0 1.8rem;
+    align-self: end;
+}
+
+.page-title {
+    grid-column: 2;
+    justify-self: start;
+    align-self: end;
+}
+
+.photography {
+    margin-top: -3.7em;
+    text-align: center;
+}
+
+.photography p {
+    font-family: 'Playfair Display', serif;
+    font-size: 0.8rem;
+    margin: 0;
+}
+
+.of h1 {
+    text-align: left;
+    margin: -0.4rem;
+}
+
+.text {
+    width: 95%;
+    padding: 0 1.8rem;
+    line-height: 1.2;
+    margin-top: -3.3em;
+}
+
+
+/* Media Queries */
+
+@media (max-width: 64em) {
+    
+p {
+    max-width: 80%;
+}
+ 
+h1 {
+font-size: 9em;
+      }  
+
+}
+  
+@media (max-width: 32em) {
+   transition: all 0.2s cubic-bezier(0.075, 0.82, 0.165, 1);
+   
+    h1 {
+      font-size: 6em;
+    }  
+
+    p {
+        font-size: 0.9em;
+    }
+
+    .container {
+        grid-template-columns: 1fr;
+    }
+
+    .right {
+        /* display: none; */
+    }
+
+    .text {
+        margin-top: -2.9em;
+    }
+  }
+
+
+
+
+
+
